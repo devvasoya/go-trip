@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoTrip</title>
+    <script src="css/3.4.3"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+</head>
+
+
+<body class="font-jost">
+    <!-- header -->
+    <header class="py-[20px] header transition duration-300 bg-transparent fixed top-0 left-0 right-0 z-40">
+        <div class="px-[30px]">
+            <div class="flex justify-between">
+                <div class="flex items-center gap-6">
+                    <div class="navbara-brand">
+                        <a href="index-1.html"><img src="img/logo-light.svg" class="w-[140px]" alt="" /></a>
+                    </div>
+                    <nav>
+                        <ul class="flex justify-center">
+                            <li class="px-[13px] text-[#ffff] text-[15px] flex items-center gap-2">
+                                <a href="javascript:void(0);">Home</a>
+                                <i class="fa-solid fa-caret-down text-[12px]"></i>
+                            </li>
+                            <li class="px-[13px] text-[#ffff] text-[15px] flex items-center gap-2">
+                                <a href="javascript:void(0);">Categories</a>
+                                <i class="fa-solid fa-caret-down text-[12px]"></i>
+                            </li>
+                            <li class="px-[13px]">
+                                <a class="text-[#ffff] text-[15px]" href="javascript:void(0);">Destinations</a>
+                            </li>
+                            <li class="px-[13px] text-[#ffff] text-[15px] flex items-center gap-2">
+                                <a href="javascript:void(0);">Blog</a>
+                                <i class="fa-solid fa-caret-down text-[12px]"></i>
+                            </li>
+                            <li class="px-[13px] text-[#ffff] text-[15px] flex items-center gap-2">
+                                <a href="javascript:void(0);">Pages</a>
+                                <i class="fa-solid fa-caret-down text-[12px]"></i>
+                            </li>
+                            <li class="px-[13px] text-[#ffff] text-[15px] flex items-center gap-2">
+                                <a href="javascript:void(0);">Dashboard</a>
+                                <i class="fa-solid fa-caret-down text-[12px]"></i>
+                            </li>
+                            <li class="px-[13px]">
+                                <a class="text-[#ffff] text-[15px]" href="javascript:void(0);">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex gap-4 items-center">
+                        <div class="nav flex items-center gap-2 text-[#ffff]">
+                            <p>USD</p>
+                            <i class="fa-solid fa-caret-down text-[12px]"></i>
+                        </div>
+                        <div class="border border-[#6f6680] h-[19px]"></div>
+                        <div class="flex items-center gap-2 text-[#ffff]">
+                            <div class="rounded-full w-[20px] overflow-hidden">
+                                <img class="w-[20px]" src="img/lang.png" alt="" />
+                            </div>
+                            <p>United Kingdorn</p>
+                            <i class="fa-solid fa-caret-down text-[12px]"></i>
+
+                            <button class="bg-[#ffff] text-[#000] px-[30px] py-[12px] rounded-[5px] ms-[20px]">
+                                Become An Expert
+                            </button>
+                            <button
+                                class="bg-transparent hover:bg-[#ffff] hover:text-[#000] transition duration-300 border border-[#ffff] text-[#ffff] px-[30px] py-[12px] rounded-[5px] ms-[10px]">
+                                Sign In / Register
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <section class="masthead -type-1 z-5 animated pt-[330px] pb-[210px] relative">
+        <div class="masthead__bg is-in-view absolute top-0 left-0 w-[100%] h-[100%] z-[-1]">
+            <img src="img/bg.webp" alt="" class="object-cover w-[100%] h-[100%]" />
+        </div>
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between flex-col">
+                <h6 class="text-[60px] text-[#ffff] font-bold">
+                    Find Next Place To Visit
+                </h6>
+                <p class="text-[16px] text-[#ffff] font-bold">
+                    Discover amzaing places at exclusive deals
+                </p>
+                <ul class="flex items-center text-[#ffff] gap-6 text-[18px] my[20px] pt-[40px]">
+                    <li
+                        class="cursor-pointer underline decoration-2 underline-offset-8 transition duration-300 hover:text-[#3554d1]">
+                        Hotel
+                    </li>
+                    <li class="cursor-pointer transition duration-300 hover:text-[#3554d1]">
+                        Tour
+                    </li>
+                    <li class="cursor-pointer transition duration-300 hover:text-[#3554d1]">
+                        Activity
+                    </li>
+                    <li class="cursor-pointer transition duration-300 hover:text-[#3554d1]">
+                        Holiday Rentals
+                    </li>
+                    <li class="cursor-pointer transition duration-300 hover:text-[#3554d1]">
+                        Car
+                    </li>
+                    <li class="cursor-pointer transition duration-300 hover:text-[#3554d1]">
+                        Cruise
+                    </li>
+                    <li class="cursor-pointer transition duration-300 hover:text-[#3554d1]">
+                        Flights
+                    </li>
+                </ul>
+                <div class="p-[12px] rounded-full bg-[#ffff] my-[50px]">
+                    <div class="flex justify-center items-center">
+                        <div class="px-[20px] border-[#dddddd] border-r-2">
+                            <p class="text-[#051036] font-bold">Location</p>
+                            <p class="text-[#767676] mt-[5px]">Where are you go</p>
+                        </div>
+                        <div class="px-[20px] border-[#dddddd] border-r-2">
+                            <p class="text-[#051036] font-bold">Check in - Check out</p>
+                            <p class="text-[#767676] mt-[5px]">Wed 2 Mar - Fri 11 Apr</p>
+                        </div>
+                        <div class="px-[20px]">
+                            <p class="text-[#051036] font-bold">Guest</p>
+                            <p class="text-[#767676] mt-[5px]">
+                                2 adults - 1 childeren - 1 room
+                            </p>
+                        </div>
+                        <button
+                            class="rounded-full items-center bg-[#3554d1] px-[35px] py-[12px] flex gap-2 text-[#ffff]">
+                            <i class="fa-solid fa-magnifying-glass text-[18px]"></i>
+                            <p class="text-[18px]">Search</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular Destinations card -->
+    <section class="Popular-Destinations pt-[120px] pb-[60px]">
+        <div class="container mx-auto px-[100px]">
+            <div class="flex mb-[40px] justify-between items-end">
+                <div class="flex flex-col">
+                    <h4 class="text-[30px] font-bold text-[#051036] mb-[10px]">
+                        Popular Destinations
+                    </h4>
+                    <p class="text-[18px] text-[#697488]">
+                        These popular destinations have a lot to offer
+                    </p>
+                </div>
+                <button
+                    class="py-[14px] px-[30px] hover:text-[#ffff] hover:bg-[#3655d1] text-[#3554d1] bg-[#f5f6fd] flex items-center justify-center gap-1 rounded-[4px] transition duration-300">
+                    <p>View All Destinations</p>
+                    <i class="fa-solid fa-arrow-down-long fa-rotate-180 ms-[10px] rotate-[225deg] text-[22px]"></i>
+                </button>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="group w-[327px] h-[400px] rounded-[7px] overflow-hidden">
+                            <img class="group-hover:brightness-50 transition duration-300" src="img/C-1.webp" alt="" />
+                            <p
+                                class="relative top-[-379px] text-center text-[#ffff] opacity-[0] group-hover:opacity-100 transition duration-300">
+                                14 Hotel - 22 Cars - 18 Tours - 95 Activity
+                            </p>
+                            <div
+                                class="flex flex-col items-center transition duration-300 relative bottom-[69px] group-hover:translate-y-[-5rem]">
+                                <h3 class="text-[#ffff] font-bold text-[30px]">New York</h3>
+                                <button
+                                    class="w-[260.02px] h-[59.99px] flex items-center justify-center hover:bg-[#3554d1] bg-[#ffff] transition duration-300 hover:text-[#ffff] text-[#051036] font-bold rounded-[5px]">
+                                    Discover
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-[300px] h-[400px]">
+                        <div class="group w-[327px] h-[400px] rounded-[7px] overflow-hidden">
+                            <img class="group-hover:brightness-50 transition duration-300" src="img/C-2.webp" alt="" />
+                            <p
+                                class="relative top-[-379px] text-center text-[#ffff] opacity-[0] group-hover:opacity-100 transition duration-300">
+                                14 Hotel - 22 Cars - 18 Tours - 95 Activity
+                            </p>
+                            <div
+                                class="flex flex-col items-center transition duration-300 relative bottom-[69px] group-hover:translate-y-[-5rem]">
+                                <h3 class="text-[#ffff] font-bold text-[30px]">London</h3>
+                                <button
+                                    class="w-[260.02px] h-[59.99px] flex items-center justify-center hover:bg-[#3554d1] bg-[#ffff] transition duration-300 hover:text-[#ffff] text-[#051036] font-bold rounded-[5px]">
+                                    Discover
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-[300px] h-[400px]">
+                        <div class="group w-[327px] h-[400px] rounded-[7px] overflow-hidden">
+                            <img class="group-hover:brightness-50 transition duration-300" src="img/C-3.webp" alt="" />
+                            <p
+                                class="relative top-[-379px] text-center text-[#ffff] opacity-[0] group-hover:opacity-100 transition duration-300">
+                                14 Hotel - 22 Cars - 18 Tours - 95 Activity
+                            </p>
+                            <div
+                                class="flex flex-col items-center transition duration-300 relative bottom-[69px] group-hover:translate-y-[-5rem]">
+                                <h3 class="text-[#ffff] font-bold text-[30px]">Barcelona</h3>
+                                <button
+                                    class="w-[260.02px] h-[59.99px] flex items-center justify-center hover:bg-[#3554d1] bg-[#ffff] transition duration-300 hover:text-[#ffff] text-[#051036] font-bold rounded-[5px]">
+                                    Discover
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-[300px] h-[400px]">
+                        <div class="group w-[327px] h-[400px] rounded-[7px] overflow-hidden">
+                            <img class="group-hover:brightness-50 transition duration-300" src="img/C-4.webp" alt="" />
+                            <p
+                                class="relative top-[-379px] text-center text-[#ffff] opacity-[0] group-hover:opacity-100 transition duration-300">
+                                14 Hotel - 22 Cars - 18 Tours - 95 Activity
+                            </p>
+                            <div
+                                class="flex flex-col items-center transition duration-300 relative bottom-[69px] group-hover:translate-y-[-5rem]">
+                                <h3 class="text-[#ffff] font-bold text-[30px]">Sydney</h3>
+                                <button
+                                    class="w-[260.02px] h-[59.99px] flex items-center justify-center hover:bg-[#3554d1] bg-[#ffff] transition duration-300 hover:text-[#ffff] text-[#051036] font-bold rounded-[5px]">
+                                    Discover
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide w-[300px] h-[400px]">
+                        <div class="group w-[327px] h-[400px] rounded-[7px] overflow-hidden">
+                            <img class="group-hover:brightness-50 transition duration-300" src="img/C-5.webp" alt="" />
+                            <p
+                                class="relative top-[-379px] text-center text-[#ffff] opacity-[0] group-hover:opacity-100 transition duration-300">
+                                14 Hotel - 22 Cars - 18 Tours - 95 Activity
+                            </p>
+                            <div
+                                class="flex flex-col items-center transition duration-300 relative bottom-[69px] group-hover:translate-y-[-5rem]">
+                                <h3 class="text-[#ffff] font-bold text-[30px]">Rome</h3>
+                                <button
+                                    class="w-[260.02px] h-[59.99px] flex items-center justify-center hover:bg-[#3554d1] bg-[#ffff] transition duration-300 hover:text-[#ffff] text-[#051036] font-bold rounded-[5px]">
+                                    Discover
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mb-[-30px]"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Discount! -->
+    <section class="Discount py-[60px]">
+        <div class="container mx-auto px-[100px]">
+            <div class="grid grid-cols-2 gap-1">
+                <div class="w-[630px] h-[549.99px] rounded-[5px] p-[70px] brightness-[0.75]" style="
+              background-image: url(../code/img/download.png);
+              background-size: cover;
+            ">
+                    <h6 class="max-w-[311px] text-[40px] text-[#ffff] font-bold">
+                        Things to do on your trip
+                    </h6>
+                    <button
+                        class="w-[180px] mt-[20px] py-[15px] flex items-center justify-center hover:bg-[#3554d1] bg-[#ffff] transition duration-300 hover:text-[#ffff] text-[#051036] font-bold rounded-[5px]">
+                        Experiences
+                    </button>
+                </div>
+                <div class="w-[630px] h-[549.99px] rounded-[5px] p-[70px] brightness-[0.75]" style="
+              background-image: url(../code/img/download\ \(1\).png);
+              background-size: cover;
+            ">
+                    <p class="text-[#ffff]">Enjoy Summer Deals</p>
+                    <h6 class="text-[40px] text-[#ffff] font-bold">
+                        Up to 70% Discount!
+                    </h6>
+                    <button
+                        class="w-[180px] mt-[20px] py-[15px] flex items-center justify-center hover:bg-[#3554d1] bg-[#ffff] transition duration-300 hover:text-[#ffff] text-[#051036] font-bold rounded-[5px]">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Recommended -->
+    <section class="Recommended">
+        <div class="container mx-auto px-[100px]">
+            <div class="flex mb-[40px] justify-between items-end">
+                <div class="flex flex-col">
+                    <h4 class="text-[30px] font-bold text-[#051036] mb-[10px]">
+                        Recommended
+                    </h4>
+                    <p class="text-[18px] text-[#697488]">
+                        Interdum et malesuada fames ac ante ipsum
+                    </p>
+                </div>
+                <button
+                    class="py-[14px] px-[30px] hover:text-[#ffff] hover:bg-[#3655d1] text-[#3554d1] bg-[#f5f6fd] flex items-center justify-center gap-1 rounded-[4px] transition duration-300">
+                    <p>View All Destinations</p>
+                    <i class="fa-solid fa-arrow-down-long fa-rotate-180 ms-[10px] rotate-[225deg] text-[22px]"></i>
+                </button>
+            </div>
+            <div class="swiper mySwiper py-[60px]">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="group">
+                            <div class="img w-[300px] h-[300px] rounded-[5px] overflow-hidden">
+                                <img class="group-hover:scale-[1.1] transition duration-300" src="img/1.png" alt="" />
+                            </div>
+                            <h6
+                                class="max-w-[293px] mt-[10px] text-left font-bold group-hover:underline underline-offset-4">
+                                The Montcalm At Brewery London City
+                            </h6>
+                            <p class="text-left text-[#828b9c] mt-[10px]">
+                                Westminster Borough, London
+                            </p>
+                            <div class="flex mt-[15px] items-center">
+                                <div class="p-[5px] rounded-[4px] text-[13px] text-[#ffff] bg-[#3554d1]">
+                                    4.8
+                                </div>
+                                <p class="ms-[10px]">Exceptional</p>
+                                <p class="text-[#979eac] text-[14px] ms-[10px]">
+                                    3,014 reviews
+                                </p>
+                            </div>
+                            <div class="flex mt-[10px] items-center">
+                                <p class="font-bold hover:text-[#3554d1]">Starting from</p>
+                                <p class="text-[#3554d1] font-bold">US$72</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group">
+                            <div class="img w-[300px] h-[300px] rounded-[5px] overflow-hidden">
+                                <img class="group-hover:scale-[1.1] transition duration-300" src="img/2.png" alt="" />
+                            </div>
+                            <h6
+                                class="max-w-[293px] mt-[10px] text-left font-bold group-hover:underline underline-offset-4">
+                                Staycity Aparthotels Deptford Bridge Station
+                            </h6>
+                            <p class="text-left text-[#828b9c] mt-[10px]">
+                                Ciutat Vella, Barcelona
+                            </p>
+                            <div class="flex mt-[15px] items-center">
+                                <div class="p-[5px] rounded-[4px] text-[13px] text-[#ffff] bg-[#3554d1]">
+                                    4.8
+                                </div>
+                                <p class="ms-[10px]">Exceptional</p>
+                                <p class="text-[#979eac] text-[14px] ms-[10px]">
+                                    3,014 reviews
+                                </p>
+                            </div>
+                            <div class="flex mt-[10px] items-center">
+                                <p class="font-bold hover:text-[#3554d1]">Starting from</p>
+                                <p class="text-[#3554d1] font-bold">US$72</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group">
+                            <div class="img w-[300px] h-[300px] rounded-[5px] overflow-hidden">
+                                <img class="group-hover:scale-[1.1] transition duration-300" src="img/3.png" alt="" />
+                            </div>
+                            <h6
+                                class="max-w-[293px] mt-[10px] text-left font-bold group-hover:underline underline-offset-4">
+                                The Westin New York at Times Square
+                            </h6>
+                            <p class="text-left text-[#828b9c] mt-[10px]">
+                                Manhattan, New York
+                            </p>
+                            <div class="flex mt-[15px] items-center">
+                                <div class="p-[5px] rounded-[4px] text-[13px] text-[#ffff] bg-[#3554d1]">
+                                    4.8
+                                </div>
+                                <p class="ms-[10px]">Exceptional</p>
+                                <p class="text-[#979eac] text-[14px] ms-[10px]">
+                                    3,014 reviews
+                                </p>
+                            </div>
+                            <div class="flex mt-[10px] items-center">
+                                <p class="font-bold hover:text-[#3554d1]">Starting from</p>
+                                <p class="text-[#3554d1] font-bold">US$72</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group">
+                            <div class="img w-[300px] h-[300px] rounded-[5px] overflow-hidden">
+                                <img class="group-hover:scale-[1.1] transition duration-300" src="img/4.png" alt="" />
+                            </div>
+                            <h6
+                                class="max-w-[293px] mt-[10px] text-left font-bold group-hover:underline underline-offset-4">
+                                DoubleTree by Hilton Hotel New York Times Square West
+                            </h6>
+                            <p class="text-left text-[#828b9c] mt-[10px]">
+                                Vaticano Prati, Rome
+                            </p>
+                            <div class="flex mt-[15px] items-center">
+                                <div class="p-[5px] rounded-[4px] text-[13px] text-[#ffff] bg-[#3554d1]">
+                                    4.8
+                                </div>
+                                <p class="ms-[10px]">Exceptional</p>
+                                <p class="text-[#979eac] text-[14px] ms-[10px]">
+                                    3,014 reviews
+                                </p>
+                            </div>
+                            <div class="flex mt-[10px] items-center">
+                                <p class="font-bold hover:text-[#3554d1]">Starting from</p>
+                                <p class="text-[#3554d1] font-bold">US$72</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group">
+                            <div class="img w-[300px] h-[300px] rounded-[5px] overflow-hidden">
+                                <img class="group-hover:scale-[1.1] transition duration-300" src="img/1.png" alt="" />
+                            </div>
+                            <h6
+                                class="max-w-[293px] mt-[10px] text-left font-bold group-hover:underline underline-offset-4">
+                                The Montcalm At Brewery London City
+                            </h6>
+                            <p class="text-left text-[#828b9c] mt-[10px]">
+                                Westminster Borough, London
+                            </p>
+                            <div class="flex mt-[15px] items-center">
+                                <div class="p-[5px] rounded-[4px] text-[13px] text-[#ffff] bg-[#3554d1]">
+                                    4.8
+                                </div>
+                                <p class="ms-[10px]">Exceptional</p>
+                                <p class="text-[#979eac] text-[14px] ms-[10px]">
+                                    3,014 reviews
+                                </p>
+                            </div>
+                            <div class="flex mt-[10px] items-center">
+                                <p class="font-bold hover:text-[#3554d1]">Starting from</p>
+                                <p class="text-[#3554d1] font-bold">US$72</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group">
+                            <div class="img w-[300px] h-[300px] rounded-[5px] overflow-hidden">
+                                <img class="group-hover:scale-[1.1] transition duration-300" src="img/2.png" alt="" />
+                            </div>
+                            <h6
+                                class="max-w-[293px] mt-[10px] text-left font-bold group-hover:underline underline-offset-4">
+                                Staycity Aparthotels Deptford Bridge Station
+                            </h6>
+                            <p class="text-left text-[#828b9c] mt-[10px]">
+                                Ciutat Vella, Barcelona
+                            </p>
+                            <div class="flex mt-[15px] items-center">
+                                <div class="p-[5px] rounded-[4px] text-[13px] text-[#ffff] bg-[#3554d1]">
+                                    4.8
+                                </div>
+                                <p class="ms-[10px]">Exceptional</p>
+                                <p class="text-[#979eac] text-[14px] ms-[10px]">
+                                    3,014 reviews
+                                </p>
+                            </div>
+                            <div class="flex mt-[10px] items-center">
+                                <p class="font-bold hover:text-[#3554d1]">Starting from</p>
+                                <p class="text-[#3554d1] font-bold">US$72</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group">
+                            <div class="img w-[300px] h-[300px] rounded-[5px] overflow-hidden">
+                                <img class="group-hover:scale-[1.1] transition duration-300" src="img/3.png" alt="" />
+                            </div>
+                            <h6
+                                class="max-w-[293px] mt-[10px] text-left font-bold group-hover:underline underline-offset-4">
+                                The Westin New York at Times Square
+                            </h6>
+                            <p class="text-left text-[#828b9c] mt-[10px]">
+                                Manhattan, New York
+                            </p>
+                            <div class="flex mt-[15px] items-center">
+                                <div class="p-[5px] rounded-[4px] text-[13px] text-[#ffff] bg-[#3554d1]">
+                                    4.8
+                                </div>
+                                <p class="ms-[10px]">Exceptional</p>
+                                <p class="text-[#979eac] text-[14px] ms-[10px]">
+                                    3,014 reviews
+                                </p>
+                            </div>
+                            <div class="flex mt-[10px] items-center">
+                                <p class="font-bold hover:text-[#3554d1]">Starting from</p>
+                                <p class="text-[#3554d1] font-bold">US$72</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group">
+                            <div class="img w-[300px] h-[300px] rounded-[5px] overflow-hidden">
+                                <img class="group-hover:scale-[1.1] transition duration-300" src="img/4.png" alt="" />
+                            </div>
+                            <h6
+                                class="max-w-[293px] mt-[10px] text-left font-bold group-hover:underline underline-offset-4">
+                                DoubleTree by Hilton Hotel New York Times Square West
+                            </h6>
+                            <p class="text-left text-[#828b9c] mt-[10px]">
+                                Vaticano Prati, Rome
+                            </p>
+                            <div class="flex mt-[15px] items-center">
+                                <div class="p-[5px] rounded-[4px] text-[13px] text-[#ffff] bg-[#3554d1]">
+                                    4.8
+                                </div>
+                                <p class="ms-[10px]">Exceptional</p>
+                                <p class="text-[#979eac] text-[14px] ms-[10px]">
+                                    3,014 reviews
+                                </p>
+                            </div>
+                            <div class="flex mt-[10px] items-center">
+                                <p class="font-bold hover:text-[#3554d1]">Starting from</p>
+                                <p class="text-[#3554d1] font-bold">US$72</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Best Price Guarantee -->
+    <section class="Best-Price-Guarantee pt-[100px] pb-[130px]">
+        <div class="container mx-auto px-[100px]">
+            <div class="grid grid-cols-3 gap-40">
+                <div class="">
+                    <div class="flex justify-center">
+                        <img src="img/1.svg" alt="" />
+                    </div>
+                    <h6 class="text-[18px] text-center mt-[10px]">
+                        Best Price Guarantee
+                    </h6>
+                    <p class="text-center mt-[10px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="">
+                    <div class="flex justify-center">
+                        <img src="img/2.svg" alt="" />
+                    </div>
+                    <h6 class="text-[18px] text-center mt-[10px]">
+                        Easy & Quick Booking
+                    </h6>
+                    <p class="text-center mt-[10px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="">
+                    <div class="flex justify-center">
+                        <img src="img/3.svg" alt="" />
+                    </div>
+                    <h6 class="text-[18px] text-center mt-[10px]">
+                        Customer Care 24/7
+                    </h6>
+                    <p class="text-center mt-[10px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- What our customers are saying us? -->
+    <section class="bg-[#e5f0fd]">
+        <div class="container mx-auto px-[100px] py-[120px]">
+            <div class="flex justify-center">
+                <div class="w-[50%]">
+                    <h6 class="text-[30px] font-bold max-w-[345px]">
+                        What our customers are saying us?
+                    </h6>
+                    <p class="text-[#788296] max-w-[493px] mt-[20px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                        varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu
+                        enim justo.
+                    </p>
+                    <div class="flex space-x-[150px]">
+                        <div class="">
+                            <h5 class="text-[30px] mt-[50px] font-bold">13m+</h5>
+                            <p class="text-[#788296]">Happy People</p>
+                        </div>
+                        <div class="">
+                            <h5 class="text-[30px] mt-[50px] font-bold">4.88</h5>
+                            <p class="text-[#788296]">Overall rating</p>
+                            <img class="mt-[10px]" src="img/Screenshot 2024-04-25 114911.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[50%]">
+                    <div class="swiper mySwiper-1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slider-1 bg-[#e5f0fd] gap-14">
+                                <div class="flex gap-6 items-center">
+                                    <div class="img">
+                                        <img src="img/1 (1).png" class="rounded-full" alt="" />
+                                    </div>
+                                    <div class="Annette-Black">
+                                        <h6 class="text-left text-[16px] font-bold">
+                                            Annette Black
+                                        </h6>
+                                        <p class="text-[16px] text-[#939eb0]">UX / Ul Designer</p>
+                                    </div>
+                                </div>
+                                <p class="text-[#051036] text-left font-bold">
+                                    The place is in a great location in Gumbet. The area is safe
+                                    and beautiful. The apartment was comfortable and the host
+                                    was kind and responsive to our requests.
+                                </p>
+                            </div>
+                            <div class="swiper-slide slider-1 bg-[#e5f0fd] gap-14">
+                                <div class="flex gap-6 items-center">
+                                    <div class="img">
+                                        <img src="img/1 (1).png" class="rounded-full" alt="" />
+                                    </div>
+                                    <div class="Annette-Black">
+                                        <h6 class="text-left text-[16px] font-bold">
+                                            Annette Black
+                                        </h6>
+                                        <p class="text-[16px] text-[#939eb0]">UX / Ul Designer</p>
+                                    </div>
+                                </div>
+                                <p class="text-[#051036] text-left font-bold">
+                                    The place is in a great location in Gumbet. The area is safe
+                                    and beautiful. The apartment was comfortable and the host
+                                    was kind and responsive to our requests.
+                                </p>
+                            </div>
+                            <div class="swiper-slide slider-1 bg-[#e5f0fd] gap-14">
+                                <div class="flex gap-6 items-center">
+                                    <div class="img">
+                                        <img src="img/1 (1).png" class="rounded-full" alt="" />
+                                    </div>
+                                    <div class="Annette-Black">
+                                        <h6 class="text-left text-[16px] font-bold">
+                                            Annette Black
+                                        </h6>
+                                        <p class="text-[16px] text-[#939eb0]">UX / Ul Designer</p>
+                                    </div>
+                                </div>
+                                <p class="text-[#051036] text-left font-bold">
+                                    The place is in a great location in Gumbet. The area is safe
+                                    and beautiful. The apartment was comfortable and the host
+                                    was kind and responsive to our requests.
+                                </p>
+                            </div>
+                            <div class="swiper-slide slider-1 bg-[#e5f0fd] gap-14">
+                                <div class="flex gap-6 items-center">
+                                    <div class="img">
+                                        <img src="img/1 (1).png" class="rounded-full" alt="" />
+                                    </div>
+                                    <div class="Annette-Black">
+                                        <h6 class="text-left text-[16px] font-bold">
+                                            Annette Black
+                                        </h6>
+                                        <p class="text-[16px] text-[#939eb0]">UX / Ul Designer</p>
+                                    </div>
+                                </div>
+                                <p class="text-[#051036] text-left font-bold">
+                                    The place is in a great location in Gumbet. The area is safe
+                                    and beautiful. The apartment was comfortable and the host
+                                    was kind and responsive to our requests.
+                                </p>
+                            </div>
+                            <div class="swiper-slide slider-1 bg-[#e5f0fd] gap-14">
+                                <div class="flex gap-6 items-center">
+                                    <div class="img">
+                                        <img src="img/1 (1).png" class="rounded-full" alt="" />
+                                    </div>
+                                    <div class="Annette-Black">
+                                        <h6 class="text-left text-[16px] font-bold">
+                                            Annette Black
+                                        </h6>
+                                        <p class="text-[16px] text-[#939eb0]">UX / Ul Designer</p>
+                                    </div>
+                                </div>
+                                <p class="text-[#051036] text-left font-bold">
+                                    The place is in a great location in Gumbet. The area is safe
+                                    and beautiful. The apartment was comfortable and the host
+                                    was kind and responsive to our requests.
+                                </p>
+                            </div>
+                            <div class="swiper-slide slider-1 bg-[#e5f0fd] gap-14">
+                                <div class="flex gap-6 items-center">
+                                    <div class="img">
+                                        <img src="img/1 (1).png" class="rounded-full" alt="" />
+                                    </div>
+                                    <div class="Annette-Black">
+                                        <h6 class="text-left text-[16px] font-bold">
+                                            Annette Black
+                                        </h6>
+                                        <p class="text-[16px] text-[#939eb0]">UX / Ul Designer</p>
+                                    </div>
+                                </div>
+                                <p class="text-[#051036] text-left font-bold">
+                                    The place is in a great location in Gumbet. The area is safe
+                                    and beautiful. The apartment was comfortable and the host
+                                    was kind and responsive to our requests.
+                                </p>
+                            </div>
+                            <div class="swiper-slide slider-1 bg-[#e5f0fd] gap-14">
+                                <div class="flex gap-6 items-center">
+                                    <div class="img">
+                                        <img src="img/1 (1).png" class="rounded-full" alt="" />
+                                    </div>
+                                    <div class="Annette-Black">
+                                        <h6 class="text-left text-[16px] font-bold">
+                                            Annette Black
+                                        </h6>
+                                        <p class="text-[16px] text-[#939eb0]">UX / Ul Designer</p>
+                                    </div>
+                                </div>
+                                <p class="text-[#051036] text-left font-bold">
+                                    The place is in a great location in Gumbet. The area is safe
+                                    and beautiful. The apartment was comfortable and the host
+                                    was kind and responsive to our requests.
+                                </p>
+                            </div>
+                            <div class="swiper-slide slider-1 bg-[#e5f0fd] gap-14">
+                                <div class="flex gap-6 items-center">
+                                    <div class="img">
+                                        <img src="img/1 (1).png" class="rounded-full" alt="" />
+                                    </div>
+                                    <div class="Annette-Black">
+                                        <h6 class="text-left text-[16px] font-bold">
+                                            Annette Black
+                                        </h6>
+                                        <p class="text-[16px] text-[#939eb0]">UX / Ul Designer</p>
+                                    </div>
+                                </div>
+                                <p class="text-[#051036] text-left font-bold">
+                                    The place is in a great location in Gumbet. The area is safe
+                                    and beautiful. The apartment was comfortable and the host
+                                    was kind and responsive to our requests.
+                                </p>
+                            </div>
+                            <div class="swiper-slide slider-1 bg-[#e5f0fd] gap-14">
+                                <div class="flex gap-6 items-center">
+                                    <div class="img">
+                                        <img src="img/1 (1).png" class="rounded-full" alt="" />
+                                    </div>
+                                    <div class="Annette-Black">
+                                        <h6 class="text-left text-[16px] font-bold">
+                                            Annette Black
+                                        </h6>
+                                        <p class="text-[16px] text-[#939eb0]">UX / Ul Designer</p>
+                                    </div>
+                                </div>
+                                <p class="text-[#051036] text-left font-bold">
+                                    The place is in a great location in Gumbet. The area is safe
+                                    and beautiful. The apartment was comfortable and the host
+                                    was kind and responsive to our requests.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Get inspiration for your next trip -->
+    <section class="pt-[120px] pb-[60px]">
+        <div class="container mx-auto px-[135px]">
+            <div class="flex flex-col items-center">
+                <h6 class="text-[30px] font-[600]">Get inspiration for your next trip</h6>
+                <p class="text-[#9ca3b1]">Interdum et malesuada fames</p>
+            </div>
+            <div class="grid grid-cols-3 gap-10 mt-[50px]">
+                <div class="card w-[406px] flex flex-col items-center ">
+                    <div class="img w-[409.99px] h-[307.49px] rounded-[10px] overflow-hidden">
+                        <img src="img/1 (2).png" alt="" class="hover:scale-[1.1] transition duration-300">
+                    </div>
+                    <p class="text-[18px] text-[#051036] font-[500] mt-[20px] ">10 European ski destinations you should visit this winter</p>
+                    <p class="text-[#697488] self-start mt-[10px] ">April 06, 2022</p>
+                </div>
+                <div class="card w-[406px] flex flex-col items-center ">
+                    <div class="img w-[409.99px] h-[307.49px] rounded-[10px] overflow-hidden">
+                        <img src="img/2 (1).png" alt="" class="hover:scale-[1.1] transition duration-300">
+                    </div>
+                    <p class="text-[18px] text-[#051036] font-[500] mt-[20px] ">Booking travel during Corona: good advice in an
+                        uncertain time</p>
+                    <p class="text-[#697488] self-start mt-[10px] ">April 06, 2022</p>
+                </div>
+                <div class="card w-[406px] flex flex-col items-center ">
+                    <div class="img w-[409.99px] h-[307.49px] rounded-[10px] overflow-hidden">
+                        <img src="img/3 (1).png" alt="" class="hover:scale-[1.1] transition duration-300">
+                    </div>
+                    <p class="text-[18px] text-[#051036] font-[500] mt-[20px] ">Where can I go? 5 amazing countries that are open right now</p>
+                    <p class="text-[#697488] self-start mt-[10px] ">April 06, 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Destinations we love -->
+    <section class="pt-[60px] pb-[120px]">
+        <div class="container mx-auto px-[135px]">
+            <div class="space-y-2">
+                <h6 class="text-[30px] text-[##051036] font-[600] ">Destinations we love</h6>
+                <p class="text-[#697488] ">Interdum et malesuada fames ac ante ipsum</p>
+            </div>
+            <div class="py-[40px]">
+                <div class="flex">
+                    <button class="text-[#3554d1] rounded-[4px] bg-[#f5f6fd] font-[500] px-[30px] py-[15px]">Regions</button>
+                    <button class="text-[#000] hover:text-[#3554d1] transition duration-300 rounded-[4px] font-[500] px-[30px] py-[15px]">Cities</button>
+                    <button class="text-[#000] hover:text-[#3554d1] transition duration-300 rounded-[4px] font-[500] px-[30px] py-[15px]">Places of interest</button>
+                </div>
+                <div class="grid grid-cols-5 gap-5">
+                    <div class="col mt-[40px]">
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Hawai</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Santorini</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Mykonos</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Jersey</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                    </div>
+                    <div class="col mt-[40px]">
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Istanbul</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Los Angeles</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">London</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Prag</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                    </div>
+                    <div class="col mt-[40px]">
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">San Diego</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">ibiza</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Paris</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Amsterdam</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                    </div>
+                    <div class="col mt-[40px]">
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Phuket</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Boston</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Dubai</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Rome</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                    </div>
+                    <div class="col mt-[40px]">
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Reykjavik</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Florence</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Krakow</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                        <div class="main group py-[15px]">
+                            <h6 class="text-[15px] group-hover:text-[#0d6efd] transition duration-300 font-[600] ">Miami</h6>
+                            <p class="text-[#697488] text-[15px]">12,683 properties</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Your Travel Journey Starts Here -->
+    <section class="pb-[60px] bg-[#0d2857] pt-[70px]">
+        <div class="container mx-auto px-[135px]">
+            <div class="flex justify-between items-center ">
+                <div class="flex items-center gap-6">
+                    <img src="img/Screenshot 2024-04-30 091103.png" class="w-[60px]" alt="">
+                    <div class="Your-Travel">
+                        <h6 class="text-[#ffff] text-[26px] font-[600] ">Your Travel Journey Starts Here</h6>
+                        <p class="text-[#ffff] text-[]">Sign up and we'll send the best deals to you</p>
+                    </div>  
+                </div>
+                <form class="space-x-2">
+                    <input class="w-[370.01px] py-[15px] px-[20px] outline-none rounded-[5px]" type="text" placeholder="Your Email" required>
+                    <button type="submit" class="px-[30px] py-[15px] text-[#ffff] rounded-[5px] bg-[#3554d1]">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="py-[60px] pb-[0px]">
+        <div class="container mx-auto px-[135px] space-y-16">
+            <div class="grid grid-cols-5 gap-5">
+                <div class="col">
+                    <div class="main mb-[30px]">
+                        <h6 class="font-[500]">Contact Us</h6>
+                    </div>
+                    <div class="main mb-[30px]">
+                        <h6 class="text-[14px] mb-[5px]">Toll Free Customer Care</h6>
+                        <a href="tel:+123 456 7890" class="text-[#0a58ca] text-[18px] font-[500]">+(1) 123 456 7890</a>
+                    </div>
+                    <div class="main">
+                        <h6 class="text-[14px] mb-[5px]">Need live support?</h6>
+                        <a href="mailto:hi@gotrip.com" class="text-[#0a58ca] text-[18px] font-[500]">hi@gotrip.com</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="main">
+                        <h6 class="font-[500]">Company</h6>
+                    </div>
+                    <div class="main mt-[30px] flex flex-col space-y-4">
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">About Us</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Careers</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Blog</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Press</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Gift Cards</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Magazine</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="main">
+                        <h6 class="font-[500]">Support</h6>
+                    </div>
+                    <div class="main mt-[30px] flex flex-col space-y-4">
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Contact</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Legal Notice</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Privacy policy</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Terms and Conditions</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Sitemap</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="main">
+                        <h6 class="font-[500]">Other Services</h6>
+                    </div>
+                    <div class="main mt-[30px] flex flex-col space-y-4">
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Car hire</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Activity Finder</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Tour List</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Flight finder</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Cruise Ticket</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Holiday Rental</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Travel Agents</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="main">
+                        <h6 class="font-[500]">Mobile</h6>
+                    </div>
+                    <div class="main mt-[30px] space-y-4">
+                        <button class="flex items-center border py-[10px] px-[20px] rounded-[3px] border-[#dddddd]">
+                            <i class="fa-brands fa-apple text-[30px]"></i>
+                            <div class="apple ms-[20px]">
+                                <p class="text-[#697488] text-[14px]">Download on the</p>
+                                <p class="text-[#000] text-left text-[16px] font-[500]">Apple Store</p>
+                            </div>
+                        </button>
+                        <button class="flex items-center border py-[10px] px-[20px] pr-[33px] rounded-[3px] border-[#dddddd]">
+                            <i class="fa-brands fa-google-play text-[25px]"></i>
+                            <div class="apple ms-[20px]">
+                                <p class="text-[#697488] text-left text-[14px]">Get in on</p>
+                                <p class="text-[#000] text-left text-[16px] font-[500]">Google play</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t-[2px] border-[#DDDDDD] py-[20px]">
+                <div class="flex justify-between">
+                    <div class="GoTrip flex space-x-4">
+                        <h6>© 2022 GoTrip LLC All rights reserved.</h6>
+                        <a class="font-[400] hover:text-[#0d6efd] ps-[10px]" href="javascript:void(0);">Privacy </a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Terms</a>
+                        <a class="font-[400] hover:text-[#0d6efd]" href="javascript:void(0);">Site Map</a>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-globe"></i>
+                        <a class="ms-[10px] underline decoration-[2px]" href="javascript:void(0);">
+                            English (US)
+                        </a>
+                        <i class="fa-solid fa-dollar-sign ms-[10px]"></i>
+                        <a class="ms-[10px] underline decoration-[2px]" href="javascript:void(0);">
+                            USD
+                        </a>
+                        <div class="flex ms-[20px] space-x-4">
+                            <i class="hover:text-[#0a58ca] fa-brands fa-facebook-f"></i>
+                            <i class="hover:text-[#0a58ca] fa-brands fa-twitter"></i>
+                            <i class="hover:text-[#0a58ca] fa-brands fa-instagram"></i>
+                            <i class="hover:text-[#0a58ca] fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/tailwind.config.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 1) {
+                $(".header").addClass("show-btn");
+            } else {
+                $(".header").removeClass("show-btn");
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper-1", {
+            slidesPerView: 1,
+        });
+    </script>
+</body>
+
+<style>
+    .masthead.-type-1 .masthead__bg::after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(270deg,rgba(5, 16, 54, 0.5) 0%,#051036 72.43%);
+        opacity: 0.85;
+    }
+    .show-btn {
+        background-color: #051036 !important;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 329px !important;
+    }
+    .slider-1 {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 100% !important;
+    }
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    </style>
+</html>
